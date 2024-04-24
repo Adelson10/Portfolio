@@ -1,11 +1,25 @@
-<header (scroll)="onScroll" [ngClass]="{'scrow__Header': isMouseScroll}">
-    <h1 class="logo__Header">Adelson</h1>
+<header
+(scroll)="onScroll"
+[ngClass]="{'OnScroll': isMouseScroll}"
+[ngClass]="{
+    'ActiveHeader': isHeaderMobile,
+    'DisableHeader': !isHeaderMobile
+    }">
+    <h1 class="logo__Header LogoNane">Adelson</h1>
     <nav>
         <ul class="Navbar__Header">
-            <li><a href="#Inicio__Apresentacao">Inicio</a></li>
-            <li><a href="#SobreMim_Apresentacao">Sobre Mim</a></li>
-            <li><a href="#Habilidades__Apresentacao">Apresentação</a></li>
-            <li><a href="#Contato__faleComigo">Fale Comigo</a></li>
+            <li><a href="#Inicio__Apresentacao"><i class="bi bi-house-door"></i>Inicio</a></li>
+            <li><a href="#SobreMim_Apresentacao"><i class="bi bi-person"></i>Sobre Mim</a></li>
+            <li><a href="#Habilidades__Apresentacao"><i class="bi bi-file-earmark-text"></i>Habilidades</a></li>
+            <li><a href="#Contato__faleComigo"><i class="bi bi-send"></i>Fale Comigo</a></li>
         </ul>
     </nav>
 </header>
+<button class="botao__MobileHeader_View">
+<i class="bi" [ngClass]="
+{
+'bi-list': !isHeaderMobile,
+'bi-x-lg': isHeaderMobile
+}"
+style="color: white;"
+(click)="onActiveMobileNav()"></i></button>
