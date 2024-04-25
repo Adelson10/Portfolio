@@ -1,4 +1,4 @@
-import { Component, HostListener, OnChanges } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,18 +8,19 @@ import { Component, HostListener, OnChanges } from '@angular/core';
 export class HeaderComponent {
   isMouseScroll:boolean = false;
   isHeaderMobile: boolean = false;
+  isHeaderMobileInitial: boolean = false;
 
   @HostListener('window:scroll',['$event']) onScroll() {
-    if((window.scrollY >= 60) && (window.innerWidth>950)){
-      this.isMouseScroll = true;      
+    if(window.scrollY >= 50){
+      this.isMouseScroll = true;
     } else {
       this.isMouseScroll = false;
     }
   }
 
   onActiveMobileNav() {
-    window
     this.isHeaderMobile = !this.isHeaderMobile;
+    this.isHeaderMobileInitial = true;
   }
-  
+
 }

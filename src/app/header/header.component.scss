@@ -1,9 +1,9 @@
-$fontSizeBar: 1.2rem;
-$sizeButtonHeader: 2.5rem;
 $primaryColor: #323232;
+$ColorFont: white;
+$ColorSelectFont: #bbbbbb;
 $layout-breaking-small: 960px;
 
-@mixin LogoFont(){
+@mixin LogoFont($fontSizeBar){
     display: inline-block;
     font-weight: bold;
     font-size: $fontSizeBar;
@@ -19,52 +19,67 @@ $layout-breaking-small: 960px;
 }
 
 header {
-    //Posição
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  //Posição
+  position: fixed;
+  width: 100%;
+  height: 175px;
+  transform: translateY(120px);
+  box-sizing: border-box;
+  bottom: 0;
 
-    //Estilo
-    padding: 1rem 0;
-    box-shadow: 0px 0px 8px #00000044;
-    border-radius: 20px 20px 0 0;
-    
-    &.ActiveHeader{
-        visibility: visible;
-        animation: onMobileAnimation 1s ease-out;
-    }
+  //Estilo
+  padding: 1rem;
+  box-shadow: 0px 0px 8px #00000000;
+  transition: box-shadow .5s ease-in-out;
 
-    &.DisableHeader{
-        animation: onBackMobileAnimation 1s ease-in-out forwards;
-    }
+  &.OnScroll {
+    box-shadow: 0px 0px 8px #0000000f;
+  }
 
-    @keyframes onMobileAnimation {
-        from {
-            transform: translateY(200px);
-        }
+  nav {
+    display: none;
+  }
 
-        to {
-            transform: translateY(0px);
-        }
-    }
-
-    @keyframes onBackMobileAnimation {
-        from {
-            transform: translateY(0px);
-        }
-
-        to {
-            transform: translateY(200px);
-            visibility: hidden;
-        }
-    }
-    
-    .LogoNane {
+  //Animação
+  &.ActiveHeader{
+      nav {
+        display: block;
+      }
+      .logo__Header {
         display: none;
-    }
+      }
+      box-shadow: 0px 0px 8px #00000079;
+      border-radius: 20px 20px 0 0;
+      animation: onMobileAnimation 1s ease-out forwards;
+  }
 
-    nav {
-        width: 100%;
+&.InitialPosition{
+  transform: translateY(120px);
+}
+
+  @keyframes onMobileAnimation {
+    from {
+      transform: translateY(120px);
+    } to {
+      transform: translateY(0px);
+    }
+  }
+
+  &.DisabledHeader{
+    animation: onBackMobileAnimation .5s ease-out forwards;
+  }
+
+  @keyframes onBackMobileAnimation {
+    from {
+      transform: translateY(0px);
+    } to {
+      transform: translateY(120px);
+    }
+  }
+
+    .logo__Header {
+      @include LogoFont(1.2rem);
+      margin: 0;
     }
 
     .Navbar__Header {
@@ -73,7 +88,7 @@ header {
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 1rem;
-        li{ 
+        li{
             list-style: none;
 
             a {
@@ -92,52 +107,65 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        visibility: visible;
+        transform: translateY(0px);
+        height: auto;
 
         top: 0;
         bottom: auto;
-        padding: 1rem;
-        box-shadow: 0px 0px 8px #00000000;
-        transition: box-shadow .5s ease-in-out;
+        padding: 2rem;
 
         nav {
             width: auto;
-        }
-
-        &.OnScroll {
-            box-shadow: 0px 0px 8px #0000000f;
+            display: block
         }
 
         .logo__Header {
-            @include LogoFont();
+            @include LogoFont(1.2rem);
         }
         .Navbar__Header {
             padding: 0;
-            @include flexBar(row,1rem);
-    
-            li {
-                list-style: none;
-                a {
-                    text-decoration: none;
-                    font-size: 1.1rem;
-                }
-                a i {
-                    display: none;
-                }
+            @include flexBar(row,2rem);
+            li > a i {
+              display: none;
             }
         }
+        &.ActiveHeader{
+          visibility: visible;
+          animation: none;
+        }
+
+        &.DisabledHeader{
+          animation: none;
+        }
     }
-}
+  }
 
 .botao__MobileHeader_View {
-    display: block;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    display: none;
+    @media (max-width:$layout-breaking-small) {
+      position: fixed;
+      bottom: .9rem;
+      right: .9rem;
 
-    width: $sizeButtonHeader;
-    height: $sizeButtonHeader;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    background-color: $primaryColor;
-    border-radius: 30px;
+      color: $primaryColor;
+      border: none;
+      background: none;
 
+      i {
+        box-sizing: content-box;
+        width: auto;
+        height: auto;
+        padding-top: 3px;
+        font-size: 1.2rem;
+      }
+
+      :hover {
+        color: $ColorSelectFont;
+      }
+    }
 }
