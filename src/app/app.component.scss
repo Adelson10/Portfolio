@@ -1,0 +1,20 @@
+$primaryColor: #424242;
+$secundaryColor: #8B8582;
+$ColorSelectFont: #000000;
+$layout-breaking-small: 960px;
+$background: #FAFAFA;
+$FontSizeTitulo: 3rem;
+
+@mixin ButtonPadrao() {
+    border: none;
+    color: $background;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: $primaryColor;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: .8rem;
+}

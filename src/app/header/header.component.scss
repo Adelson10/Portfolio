@@ -1,7 +1,7 @@
 $primaryColor: #424242;
-$ColorFont: white;
 $ColorSelectFont: #000000;
 $layout-breaking-small: 960px;
+$background: #FAFAFA;
 
 @mixin LogoFont($fontSizeBar){
     display: inline-block;
@@ -20,12 +20,13 @@ $layout-breaking-small: 960px;
 
 header {
   //Posição
-  position: fixed;
   width: 100%;
   height: 175px;
   transform: translateY(120px);
   box-sizing: border-box;
   bottom: 0;
+  background-color: #FAFAFA;
+  position: fixed;
 
   //Estilo
   padding: 1rem;
@@ -34,6 +35,7 @@ header {
 
   &.OnScroll {
     box-shadow: 0px 0px 8px #0000000f;
+    z-index: 10;
   }
 
   nav {
@@ -117,8 +119,9 @@ header {
         visibility: visible;
         transform: translateY(0px);
         height: auto;
-
+        
         top: 0;
+        position: sticky;
         bottom: auto;
         padding: 2rem;
 
@@ -151,6 +154,7 @@ header {
 .botao__MobileHeader_View {
     display: none;
     @media (max-width:$layout-breaking-small) {
+      z-index: 11;
       position: fixed;
       bottom: .9rem;
       right: .9rem;

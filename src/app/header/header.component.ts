@@ -11,7 +11,7 @@ export class HeaderComponent {
   isHeaderMobileInitial: boolean = false;
 
   @HostListener('window:scroll',['$event']) onScroll() {
-    if(window.scrollY >= 50){
+    if(window.scrollY >= 60){
       this.isMouseScroll = true;
     } else {
       this.isMouseScroll = false;
