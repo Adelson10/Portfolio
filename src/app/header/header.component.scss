@@ -1,6 +1,6 @@
-$primaryColor: #323232;
+$primaryColor: #424242;
 $ColorFont: white;
-$ColorSelectFont: #bbbbbb;
+$ColorSelectFont: #000000;
 $layout-breaking-small: 960px;
 
 @mixin LogoFont($fontSizeBar){
@@ -48,7 +48,7 @@ header {
       .logo__Header {
         display: none;
       }
-      box-shadow: 0px 0px 8px #00000079;
+      box-shadow: 0px 0px 8px #0000002d;
       border-radius: 20px 20px 0 0;
       animation: onMobileAnimation 1s ease-out forwards;
   }
@@ -66,14 +66,16 @@ header {
   }
 
   &.DisabledHeader{
-    animation: onBackMobileAnimation .5s ease-out forwards;
+    animation: onBackMobileAnimation .2s ease-out forwards;
   }
 
   @keyframes onBackMobileAnimation {
     from {
       transform: translateY(0px);
+      border-radius: 20px 20px 0 0;
     } to {
       transform: translateY(120px);
+      border-radius: 0px;
     }
   }
 
@@ -83,7 +85,7 @@ header {
     }
 
     .Navbar__Header {
-        padding: 2rem 2rem 3rem 2rem;
+        padding: 1rem 2rem 3rem 2rem;
         margin: 0;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -95,6 +97,10 @@ header {
                 text-decoration: none;
                 @include flexBar(column,.1rem);
                 color: $primaryColor;
+            }
+            a:hover {
+              color: $ColorSelectFont;
+              font-weight: bolder;
             }
             a i{
             display: block;
