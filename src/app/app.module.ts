@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { SobreMimComponent } from './sobre-mim/sobre-mim.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { ServicosComponent } from './servicos/servicos.component';
+import { DialogServiceComponent } from './servicos/dialog-service/dialog-service.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +20,14 @@ import { HabilidadesComponent } from './habilidades/habilidades.component';
     ApresentacaoComponent,
     SobreMimComponent,
     HabilidadesComponent,
+    ServicosComponent,
+    DialogServiceComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

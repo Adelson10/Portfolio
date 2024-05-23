@@ -4,50 +4,18 @@
     <article>
         <h3>Front End Developer</h3>
         <ul>
-            <li>
-                <h3>HTML</h3>
-                <p>Intermediario</p>
-            </li>
-            <li>
-                <h3>CSS</h3>
-                <p>Intermediario</p>
-            </li>
-            <li>
-                <h3>JavaScript</h3>
-                <p>Intermediario</p>
-            </li>
-            <li>
-                <h3>TypeScript</h3>
-                <p>Intermediario</p>
-            </li>
-            <li>
-                <h3>Bootstrap</h3>
-                <p>Basic</p>
-            </li>
-            <li>
-                <h3>Git</h3>
-                <p>Basico</p>
-            </li>
-            <li>
-                <h3>Angular</h3>
-                <p>Intermediario</p>
-            </li>
-            <li>
-                <h3>React</h3>
-                <p>Intermediario</p>
+            <li *ngFor="let habilidade of habilidadesFront">
+                <h3>{{habilidade.nome}}</h3>
+                <p>{{habilidade.level}}</p>
             </li>
         </ul>
     </article>
     <article>
         <h3>Back End Developer</h3>
         <ul>
-            <li>
-                <h3>MySql</h3>
-                <p>Intermediario</p>
-            </li>
-            <li>
-                <h3>Node Js</h3>
-                <p>Basico</p>
+            <li *ngFor="let habilidade of habilidadesBack">
+                <h3>{{habilidade.nome}}</h3>
+                <p>{{habilidade.level}}</p>
             </li>
         </ul>
     </article>
