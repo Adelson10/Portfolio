@@ -4,6 +4,8 @@ $ColorSelectFont: #000000;
 $layout-breaking-small: 960px;
 $background: #FAFAFA;
 $FontSizeTitulo: 3rem;
+$colorBorder: #eee;
+$colorFundoContainers: white;
 
 @mixin ButtonPadrao() {
     border: none;
@@ -13,8 +15,28 @@ $FontSizeTitulo: 3rem;
     background-color: $primaryColor;
     border-radius: 1rem;
 
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    gap: .8rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+main {
+   width: 90%;
+   margin: 0 auto;
+}
+
+p {
+    font-size: 1.2rem;
+    color: $secundaryColor;
+}
+
+section {
+    padding: 3rem 0;
+    
+    h1 {
+        margin: .5rem 0;
+    }
+    .subTitle {
+        margin: 0;
+    }
 }

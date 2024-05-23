@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { SobreMimComponent } from './sobre-mim/sobre-mim.component';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SobreMimComponent } from './sobre-mim/sobre-mim.component';
     HeaderComponent,
     ApresentacaoComponent,
     SobreMimComponent,
+    HabilidadesComponent,
   ],
   imports: [
     BrowserModule,

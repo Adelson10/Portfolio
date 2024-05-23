@@ -1,0 +1,53 @@
+@use "../app.component.scss" as style;
+
+section {
+    text-align: center;
+
+    .Button {
+        @include style.ButtonPadrao();
+        text-align: center;
+    }
+
+    .Foto__SobreMim {
+        max-width: 50%;
+        border-radius: 1rem;
+        margin: 2rem 0;
+    }
+        
+        .container__skills_SobreMim {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 30% 30% 30%;
+            width: auto;
+            list-style: none;
+            padding: 0;
+            .box_container__skills_sobreMim{
+                border-radius: .5rem;
+                border: 2px solid style.$colorBorder;
+                background-color: style.$colorFundoContainers;
+                padding: .8rem;
+                text-align: center;
+        
+                .Titulo__container_Skills_SobreMim,
+                .SubTitulo__container_Skills_SobreMim {
+                    margin: .2rem 0;
+                }
+
+                .Titulo__container_Skills_SobreMim{
+                    font-size: 1rem;
+                }
+        
+                .SubTitulo__container_Skills_SobreMim{
+                    color: #868686;     
+                    font-size: .8rem;    
+                }
+                
+            
+                i{
+                    font-size: 1.5rem;
+                }
+        
+            }
+        }
+
+}

@@ -14,9 +14,6 @@
     align-items: center;
     flex-wrap: wrap;
 
-    width: 100%;
-    padding: 1rem 0 3rem 0;
-
     .Apresentacao__Sociais {
         position: absolute;
         left: 1.5rem;
@@ -31,7 +28,6 @@
 
     .Apresentacao__Container_Texto {
         order: 3;
-        padding: 1.5rem;
 
         h1 {
             font-size: style.$FontSizeTitulo;
@@ -64,12 +60,8 @@
               right: 0;
           }
         }
-        p {
-            font-size: 1.2rem;
-            color: style.$secundaryColor;
-        }
 
-        button {
+        .Button {
             @include style.ButtonPadrao();
         }
     }
