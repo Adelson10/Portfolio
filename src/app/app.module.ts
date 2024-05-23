@@ -8,9 +8,10 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { SobreMimComponent } from './sobre-mim/sobre-mim.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ServicosComponent } from './servicos/servicos.component';
-import { DialogServiceComponent } from './servicos/dialog-service/dialog-service.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogServiceComponent } from './servicos/dialog-service/dialog-service.component';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

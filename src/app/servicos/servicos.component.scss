@@ -1,0 +1,19 @@
+section {
+    article{
+        a{
+            cursor: pointer;
+        }
+
+        a::after {
+            content: '';
+            margin-left: .5rem;
+            height: .8rem;
+            width: 1rem;
+            display: inline-block;
+            background-image: url('../../assets/image/arrow-right.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateY(-1px);
+        }
+    }
+}
