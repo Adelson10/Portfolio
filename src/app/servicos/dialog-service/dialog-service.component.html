@@ -1,6 +1,9 @@
-<h2 mat-dialog-title></h2>
-<mat-dialog-content>
-  
-  <ul>
-  </ul>
-</mat-dialog-content>
+<section>
+  <h2>{{data.dados.title}}</h2>
+  <mat-dialog-content>
+    <p>{{data.dados.resumo}}</p>
+    <ul *ngFor="let item of data.dados.lista">
+      <li>{{item}}</li>
+    </ul>
+  </mat-dialog-content>
+</section>

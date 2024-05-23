@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogServiceComponent } from './servicos/dialog-service/dialog-service.component';
 import { MatButtonModule } from '@angular/material/button';
+import { QualificacoesComponent } from './qualificacoes/qualificacoes.component';
+import { TimeLineComponent } from './qualificacoes/time-line/time-line.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { MatButtonModule } from '@angular/material/button';
     HabilidadesComponent,
     ServicosComponent,
     DialogServiceComponent,
+    QualificacoesComponent,
+    TimeLineComponent,
   ],
   imports: [
     BrowserModule,

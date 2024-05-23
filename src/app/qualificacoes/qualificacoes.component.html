@@ -1,0 +1,15 @@
+<section>
+    <h1>Qualificações</h1>
+    <p class="subTitle">Minha jornada pessoal</p>
+    <div>
+        <button (click)="Active()">Educação</button>
+        <button (click)="Active()">Experiencia</button>
+    </div>
+    <div *ngIf="buttonStats else SelectTemplate">
+        
+    </div>
+</section>
+
+<ng-template #SelectTemplate>
+
+</ng-template>

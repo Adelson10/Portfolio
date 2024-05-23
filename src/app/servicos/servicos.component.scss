@@ -1,5 +1,12 @@
+@use "../app.component.scss" as style;
+
 section {
+    text-align: center;
     article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 3rem 0;
         a{
             cursor: pointer;
         }
@@ -14,6 +21,25 @@ section {
             background-repeat: no-repeat;
             background-size: cover;
             transform: translateY(-1px);
+            color: style.$secundaryColor;
+        }
+
+        div{
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 4rem 4rem 2rem 2rem;
+            border-radius: 1rem;
+            border: 1px solid style.$colorBorder;
+            background-color: style.$colorFundoContainers;
+            i {
+                font-size: 2rem;
+            }
+            a{
+                font-size: .8rem;
+                color: style.$secundaryColor;
+            }
         }
     }
 }
