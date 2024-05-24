@@ -14,6 +14,8 @@ import { DialogServiceComponent } from './servicos/dialog-service/dialog-service
 import { MatButtonModule } from '@angular/material/button';
 import { QualificacoesComponent } from './qualificacoes/qualificacoes.component';
 import { TimeLineComponent } from './qualificacoes/time-line/time-line.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { RepositorioComponent } from './portfolio/repositorio/repositorio.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { TimeLineComponent } from './qualificacoes/time-line/time-line.component
     DialogServiceComponent,
     QualificacoesComponent,
     TimeLineComponent,
+    PortfolioComponent,
+    RepositorioComponent
   ],
   imports: [
     BrowserModule,

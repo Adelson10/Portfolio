@@ -3,3 +3,9 @@ export interface TimeLine {
     empresa: string,
     data: string,
 }
+
+export interface Portfolio {
+    img: string,
+    title: string,
+    src: string
+}

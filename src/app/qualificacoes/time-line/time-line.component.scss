@@ -47,7 +47,7 @@ article {
         background-color: style.$primaryColor;
         border-radius: 15px;
         right: 0;
-        transform: translateX(8px);
+        transform: translateX(9px);
     }
     
     .right-timeLine::before {
@@ -58,7 +58,7 @@ article {
         width: 1rem;
         background-color: style.$primaryColor;
         border-radius: 15px;
-        transform: translateX(-8px);
+        transform: translateX(-9px);
     }
 
     .time-timeLine {

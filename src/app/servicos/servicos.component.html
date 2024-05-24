@@ -2,7 +2,7 @@
     <h1>Serviços</h1>
     <p class="subTitle">O que eu ofereço</p>
     <article>
-        <div *ngFor="let servico of servicos">
+        <div class="Container__Box" *ngFor="let servico of servicos">
             <i class={{servico.icon}}></i>
             <h3>{{servico.title}}</h3>
             <a (click)="openDialog(servico.conteudo)" target="_self">Veja Mais</a>

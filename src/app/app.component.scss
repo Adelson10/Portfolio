@@ -34,6 +34,10 @@ p {
     color: $secundaryColor;
 }
 
+a {
+    text-decoration: none;
+}
+
 section {
     padding: 3rem 0;
     
@@ -43,4 +47,51 @@ section {
     .subTitle {
         margin: 0;
     }
+}
+
+.Container__Box {
+
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 4rem 4rem 2rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid $colorBorder;
+    background-color: $colorFundoContainers;
+    
+    &.Box__Img {
+        padding: 1rem;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    a{
+        cursor: pointer;
+        font-size: .75rem;
+        color: $secundaryColor;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: .5rem;
+    }
+
+    a::after {
+        content: '';
+        height: .8rem;
+        width: 1rem;
+        display: inline-block;
+        background-image: url('../assets/image/arrow-right.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translateY(-3px);
+        color: $secundaryColor;
+    }
+
+    img {
+        border-radius: 1rem;
+    }
+
 }
