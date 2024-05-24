@@ -7,6 +7,25 @@ section {
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
         padding: 3rem 0;
-    
+
+        h3 {
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            font-weight: 400;
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width: 620px) {
+    section {
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            div {
+                max-width: 150px;
+            }
+        }
     }
 }

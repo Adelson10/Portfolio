@@ -6,6 +6,7 @@ $background: #FAFAFA;
 $FontSizeTitulo: 3rem;
 $colorBorder: #eee;
 $colorFundoContainers: white;
+$layout-breaking-small: 960px;
 
 @mixin ButtonPadrao() {
     border: none;
@@ -43,9 +44,12 @@ section {
     
     h1 {
         margin: .5rem 0;
+        text-align: center;
     }
     .subTitle {
         margin: 0;
+        margin-bottom: 2rem;
+        text-align: center;
     }
 }
 
@@ -55,7 +59,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 4rem 4rem 2rem 2rem;
+    padding: 3rem 1rem 2rem 2rem;
     border-radius: 1rem;
     border: 1px solid $colorBorder;
     background-color: $colorFundoContainers;
@@ -93,5 +97,13 @@ section {
     img {
         border-radius: 1rem;
     }
+
+}
+
+@media (min-width: $layout-breaking-small) {
+    main {
+        width: 40rem;
+        margin: 0 auto;
+     }
 
 }

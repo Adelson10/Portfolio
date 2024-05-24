@@ -26,7 +26,7 @@ export class ServicosComponent {
     },
     {
       icon: 'bi bi-code',
-      title: 'UI/UX',
+      title: 'UI/UX Desginer',
       conteudo: {
         title: 'UI/UX',
         resumo: 'Crio experiências únicas para o usuário que os marcam, tudo isso com simplicidade.',

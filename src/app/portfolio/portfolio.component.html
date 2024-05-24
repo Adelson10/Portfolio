@@ -1,11 +1,11 @@
-<section>
+<section id="Portfolio">
     <h1>Portfolio</h1>
     <p class="subTitle">Meus recentes trabalhos</p>
     <article>
         <div>
-            <button>Todos</button>
-            <button>Front-End</button>
-            <button>Back-End</button>
+            <button id="Todos" (click)="selectionar($event)" [ngClass]=" { 'Active' : type === 'Todos' } ">Todos</button>
+            <button id="Front-End" (click)="selectionar($event)" [ngClass]=" { 'Active' : type === 'Front-End' } ">Front-End</button>
+            <button id="Back-End" (click)="selectionar($event)" [ngClass]=" { 'Active' : type === 'Back-End' } ">Back-End</button>
         </div>
         <app-repositorio [dados]="dados"></app-repositorio>
     </article>

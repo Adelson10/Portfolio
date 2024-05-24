@@ -7,5 +7,6 @@ export interface TimeLine {
 export interface Portfolio {
     img: string,
     title: string,
-    src: string
+    src: string,
+    type: string
 }
