@@ -2,4 +2,26 @@
 
 section {
     text-align: center;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem 0;
+        a {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: style.$primaryColor;
+        }
+
+        .bi {
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+
+        .active{
+            font-weight: bold;
+            color: style.$ColorSelectFont;
+        }
+    }
 }

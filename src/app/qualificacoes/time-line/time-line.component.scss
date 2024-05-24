@@ -1,3 +1,5 @@
+@use '../../app.component.scss' as style;
+
 article {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,10 @@ article {
     h3,p {
         margin: 0;
         margin-bottom: .5rem;
+    }
+
+    .title-timeLine{
+        color: style.$primaryColor;
     }
 
     .timeLine {
@@ -23,13 +29,13 @@ article {
     
     .left-timeLine{
         margin-right: 50%;
-        border-right: 2px solid black;
+        border-right: 2px solid style.$primaryColor;
     }
     
     
     .right-timeLine{
         margin-left: 50%;
-        border-left: 2px solid black;
+        border-left: 2px solid style.$primaryColor;
     }
     
     .left-timeLine::before {
@@ -38,7 +44,7 @@ article {
         position: absolute;
         height: 1rem;
         width: 1rem;
-        background-color: black;
+        background-color: style.$primaryColor;
         border-radius: 15px;
         right: 0;
         transform: translateX(.6rem);
@@ -50,12 +56,16 @@ article {
         position: absolute;
         height: 1rem;
         width: 1rem;
-        background-color: black;
+        background-color: style.$primaryColor;
         border-radius: 15px;
         transform: translateX(-.6rem);
     }
 
     .time-timeLine {
         margin: 1rem 0;
+    }
+
+    .final-timeLine {
+        border: none;
     }
 }

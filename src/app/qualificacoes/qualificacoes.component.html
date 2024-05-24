@@ -2,10 +2,10 @@
     <h1>Qualificações</h1>
     <p class="subTitle">Minha jornada pessoal</p>
     <div>
-        <button (click)="Active()">Educação</button>
-        <button (click)="Active()">Experiencia</button>
+        <a [ngClass]="{'active': buttonStats}" (click)="Active()"><i class="bi bi-backpack2"></i>  Educação</a>
+        <a [ngClass]="{'active': !buttonStats}" (click)="Active()"><i class="bi bi-suitcase-lg"></i>   Experiencia</a>
     </div>
-    <app-time-line *ngIf="buttonStats else SelectTemplate" [lista]="Experience"></app-time-line>
+    <app-time-line *ngIf="!buttonStats else SelectTemplate" [lista]="Experience"></app-time-line>
 </section>
 
 <ng-template #SelectTemplate>

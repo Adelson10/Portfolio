@@ -25,7 +25,7 @@ export class ServicosComponent {
       }
     },
     {
-      icon: 'bi bi-card-image',
+      icon: 'bi bi-code',
       title: 'UI/UX',
       conteudo: {
         title: 'UI/UX',

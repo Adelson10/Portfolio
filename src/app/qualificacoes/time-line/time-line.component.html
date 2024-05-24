@@ -1,5 +1,10 @@
 <article>
-    <div *ngFor="let item of lista; let i = index" class="timeLine" [ngClass]="lista?.length == i ? (i % 2 ? 'right-timeLine' : 'left-timeLine')">
+    <div *ngFor="let item of lista; let i = index" class="timeLine" 
+    [ngClass]="{
+        'final-timeLine' : lista!.length-1 === i,
+        'right-timeLine' : i % 2 === 1,
+        'left-timeLine' : i % 2 === 0
+        }">
         <div>
             <h3 class="title-timeLine">{{item.title}}</h3>
             <p class="subTitle-timeLine">{{item.empresa}}</p>
