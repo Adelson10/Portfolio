@@ -5,11 +5,9 @@
         <button (click)="Active()">Educação</button>
         <button (click)="Active()">Experiencia</button>
     </div>
-    <div *ngIf="buttonStats else SelectTemplate">
-        
-    </div>
+    <app-time-line *ngIf="buttonStats else SelectTemplate" [lista]="Experience"></app-time-line>
 </section>
 
 <ng-template #SelectTemplate>
-
+    <app-time-line [lista]="Education"></app-time-line>
 </ng-template>

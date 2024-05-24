@@ -1,7 +1,61 @@
-.left-timeLine {
-
-}
-
-.title-timeLine {
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
     
+    h3,p {
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+
+    .timeLine {
+        text-align: start;
+    }
+
+    .left-timeLine,.right-timeLine {
+        width: 50%;
+        position: relative;
+    }
+    .left-timeLine div
+    ,.right-timeLine div {
+        padding: 0 2rem;
+    }
+    
+    .left-timeLine{
+        margin-right: 50%;
+        border-right: 2px solid black;
+    }
+    
+    
+    .right-timeLine{
+        margin-left: 50%;
+        border-left: 2px solid black;
+    }
+    
+    .left-timeLine::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        background-color: black;
+        border-radius: 15px;
+        right: 0;
+        transform: translateX(.6rem);
+    }
+    
+    .right-timeLine::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        background-color: black;
+        border-radius: 15px;
+        transform: translateX(-.6rem);
+    }
+
+    .time-timeLine {
+        margin: 1rem 0;
+    }
 }

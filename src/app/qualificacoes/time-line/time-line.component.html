@@ -1,7 +1,9 @@
 <article>
-    <div class="left-timeLine">
-        <h3 class="title-timeLine">teste</h3>
-        <p class="subTitle-timeLine">teste</p>
-        <p class="time-timeLine">2026-2030</p>
+    <div *ngFor="let item of lista; let i = index" class="timeLine" [ngClass]="lista?.length == i ? (i % 2 ? 'right-timeLine' : 'left-timeLine')">
+        <div>
+            <h3 class="title-timeLine">{{item.title}}</h3>
+            <p class="subTitle-timeLine">{{item.empresa}}</p>
+            <p class="time-timeLine">{{item.data}}</p>
+        </div>
     </div>
 </article>

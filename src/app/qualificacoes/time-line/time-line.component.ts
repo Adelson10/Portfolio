@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TimeLine } from 'src/app/time-line';
 
 @Component({
   selector: 'app-time-line',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./time-line.component.scss']
 })
 export class TimeLineComponent {
-
+  @Input() lista?:Array<TimeLine>;
 }
