@@ -99,6 +99,11 @@ section {
     margin: 1rem 0;
 }
 
+.Button:hover,.Button::selection {
+    background-color: $ColorSelectFont;
+    cursor: pointer;
+}
+
 @media (min-width: $layout-breaking-small) {
     main {
         width: 40rem;

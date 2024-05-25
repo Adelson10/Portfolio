@@ -125,6 +125,54 @@
         .Apresentacao__Container_Texto {
             order: 2;
 
+            .container__Mouse {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                margin: 1rem 0;
+                h3 {
+                    color: style.$primaryColor;
+                    font-weight: 400;
+                }
+
+                i {
+                    animation: scroll 1s ease-in infinite;
+                }
+
+                @keyframes scroll {
+                    0% {
+                        transform: translateY(-5px);
+                    }
+                    50% {
+                        transform: translateY(0px);
+                    }
+                    100% {
+                        transform: translateY(-5px);
+                    }
+                }
+
+                .Mouse {
+                    width: 1.5rem;
+                    height: 2.5rem;
+                    border: 3px solid style.$primaryColor;
+                    border-radius: 1rem;
+                    position: relative;
+    
+                    &::before {
+                        content: '';
+                        display: block;
+                        background-color: style.$primaryColor;
+                        height: .5rem;
+                        width: .2rem;
+                        position: absolute;
+                        left: 45%;
+                        top: .5rem;
+                        border-radius: 2rem;
+                    }
+    
+                }
+            }
+
             h1 {
                 font-size: style.$FontSizeTitulo;
                 color: style.$primaryColor;
