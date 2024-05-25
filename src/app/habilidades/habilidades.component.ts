@@ -8,11 +8,7 @@ import { Component } from '@angular/core';
 export class HabilidadesComponent {
   habilidadesFront = [
     {
-      nome: 'HTML',
-      level: 'Basico'
-    },
-    {
-      nome: 'CSS',
+      nome: 'Angular',
       level: 'Intermediario'
     },
     {
@@ -20,7 +16,11 @@ export class HabilidadesComponent {
       level: 'Intermediario'
     },
     {
-      nome: 'Angular',
+      nome: 'HTML',
+      level: 'Basico'
+    },
+    {
+      nome: 'CSS',
       level: 'Intermediario'
     },
     {
