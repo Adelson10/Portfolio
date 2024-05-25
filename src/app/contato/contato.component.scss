@@ -7,8 +7,9 @@ h2 {
 section{
     text-align: center;
         .FormasDeContato {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             gap: 3rem;
             article {
                 display: flex;
@@ -50,10 +51,18 @@ section{
                             border: 2px solid style.$secundaryColor;
                             width: 100%;
                             box-sizing: border-box;
+                            background: style.$background;
                         }
                     }
                 }
             }
+    }
+
+    @media (min-width: style.$layout-breaking-small) {
+        .FormasDeContato {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
 }

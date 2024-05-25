@@ -65,7 +65,7 @@
 
         .Apresentacao__foto {
         order: 2;
-        width: 90%;
+        min-width: 90%;
         padding: 3rem 0 1rem 0;
 
         display: flex;
@@ -113,10 +113,13 @@
             top: auto;
         }
 
-        .Apresentacao__foto_Imagem {
-            order: 3;
-            height: 500px;
-            width: 500px;
+        .Apresentacao__foto{
+            .Apresentacao__foto_Imagem {
+                order: 3;
+                height: 400px;
+                width: 400px;
+            }
+
         }
 
         .Apresentacao__Container_Texto {

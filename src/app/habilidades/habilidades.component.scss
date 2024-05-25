@@ -1,5 +1,19 @@
 @use "../app.component.scss" as style;
 
+@mixin iconHabilidade($url) {
+    content: '';
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    background-image: $url;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: -2rem;
+}
+
 section {
     text-align: center;
     article {
@@ -39,16 +53,32 @@ section {
                 margin: 0 auto;
             }
 
-            h3::after {
-                content: '';
-                display: block;
-                height: 1rem;
-                width: 1rem;
-                position: absolute;
-                background-image: url('../../assets/image/patch-check-fill.svg');
-                top: 0;
-                left: -1.5rem;
+            #Git::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-git.svg'));
             }
+            #HTML::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-html5.svg'));
+            }
+            #CSS::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-css3.svg'));
+            }
+            #TypeScript::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-typescript.svg'));
+            }
+            #Angular::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-angular.svg'));
+            }
+            #Bootstrap::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-bootstrap.svg'));
+            }
+
+            #MySql::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-postgresql.svg'));
+            }
+            #NodeJs::after {
+                @include iconHabilidade(url('../../assets/image/icons/bxl-nodejs.svg'));
+            }
+
         }
     }
 }
@@ -56,8 +86,6 @@ section {
 @media (min-width:style.$layout-breaking-small) {
     section {
         div {
-            display: grid;
-            grid-template-columns: 50% 50%;
             gap: 2rem;
         }
     }

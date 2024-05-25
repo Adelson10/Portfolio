@@ -38,7 +38,7 @@ export class HabilidadesComponent {
       level: 'Intermediario'
     },
     {
-      nome: 'Node Js',
+      nome: 'NodeJs',
       level: 'Basico'
     },
   ]
