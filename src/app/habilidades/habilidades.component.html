@@ -1,22 +1,24 @@
 <section id="Habilidades">
     <h1>habilidades</h1>
     <p class="subTitle">Meu nível técnico</p>
-    <article>
-        <h3>Front End Developer</h3>
-        <ul>
-            <li *ngFor="let habilidade of habilidadesFront">
-                <h3>{{habilidade.nome}}</h3>
-                <p>{{habilidade.level}}</p>
-            </li>
-        </ul>
-    </article>
-    <article>
-        <h3>Back End Developer</h3>
-        <ul>
-            <li *ngFor="let habilidade of habilidadesBack">
-                <h3>{{habilidade.nome}}</h3>
-                <p>{{habilidade.level}}</p>
-            </li>
-        </ul>
-    </article>
+    <div>
+        <article>
+            <h3>Front End Developer</h3>
+            <ul>
+                <li *ngFor="let habilidade of habilidadesFront">
+                    <h3>{{habilidade.nome}}</h3>
+                    <p>{{habilidade.level}}</p>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>Back End Developer</h3>
+            <ul>
+                <li *ngFor="let habilidade of habilidadesBack">
+                    <h3>{{habilidade.nome}}</h3>
+                    <p>{{habilidade.level}}</p>
+                </li>
+            </ul>
+        </article>
+    </div>
 </section>

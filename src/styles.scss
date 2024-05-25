@@ -43,6 +43,7 @@ $primaryColor: #424242;
 body, html {
     background: $background;
     font-family: "Josefin Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

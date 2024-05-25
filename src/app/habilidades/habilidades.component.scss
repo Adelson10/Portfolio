@@ -26,6 +26,7 @@ section {
             h3,p {
                 margin: 0;
                 position: relative;
+                font-weight: 400;
             }
 
             p {
@@ -49,17 +50,15 @@ section {
                 left: -1.5rem;
             }
         }
+    }
+}
 
-        ul::before {
-            content: '';
-            display: block;
-            width: 70%;
-            height: 1px;
-            background-color: black;
-            position: absolute;
-            bottom: 0;
-            left: 15%;
-            right: 15%;
+@media (min-width:style.$layout-breaking-small) {
+    section {
+        div {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 2rem;
         }
     }
 }

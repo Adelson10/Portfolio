@@ -6,3 +6,12 @@ article {
     gap: 1rem;
     margin: 2rem 0
 }
+
+
+@media (min-width: style.$layout-breaking-small) {
+    article {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+}

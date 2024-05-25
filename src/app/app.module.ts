@@ -16,6 +16,7 @@ import { QualificacoesComponent } from './qualificacoes/qualificacoes.component'
 import { TimeLineComponent } from './qualificacoes/time-line/time-line.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { RepositorioComponent } from './portfolio/repositorio/repositorio.component';
+import { ContatoComponent } from './contato/contato.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { RepositorioComponent } from './portfolio/repositorio/repositorio.compon
     QualificacoesComponent,
     TimeLineComponent,
     PortfolioComponent,
-    RepositorioComponent
+    RepositorioComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

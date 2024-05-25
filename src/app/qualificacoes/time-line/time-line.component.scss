@@ -10,10 +10,6 @@ article {
         margin-bottom: .5rem;
     }
 
-    .title-timeLine{
-        color: style.$primaryColor;
-    }
-
     .timeLine {
         text-align: start;
     }
@@ -22,6 +18,7 @@ article {
         width: 50%;
         position: relative;
     }
+
     .left-timeLine div
     ,.right-timeLine div {
         padding: 0 2rem;
@@ -30,12 +27,16 @@ article {
     .left-timeLine{
         margin-right: 50%;
         border-right: 2px solid style.$primaryColor;
+        display: flex;
+        justify-content: end;
     }
     
     
     .right-timeLine{
         margin-left: 50%;
         border-left: 2px solid style.$primaryColor;
+        display: flex;
+        justify-content: start;
     }
     
     .left-timeLine::before {

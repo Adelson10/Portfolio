@@ -1,0 +1,33 @@
+<section>
+    <h1>Fale Comigo</h1>
+    <p class="subTitle">Meu nível técnico</p>
+    <article class="FormasDeContato">
+        <article>
+            <h2>Entre em Contato</h2>
+            <div class="Container__Box" *ngFor="let contato of contatos">
+                <i class={{contato.icon}}></i>
+                <h3>{{contato.type}}</h3>
+                <p>{{contato.contact}}</p>
+                <a href={{contato.src}} target="_blank">Escreva-me</a>
+            </div>
+        </article>
+        <article>
+            <h2>Escreva-me seu projeto</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Insira seu nome">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Insira seu email">
+                </div>
+                <div>
+                    <label for="projeto">Projeto</label>
+                    <textarea id="projeto" rows="7" placeholder="Digite seu projeto"></textarea>
+                </div>
+                <button class="Button">Chama ai  <i class="bi bi-send"></i></button>
+            </form>
+        </article>
+    </article>
+</section>

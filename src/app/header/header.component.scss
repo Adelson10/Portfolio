@@ -151,7 +151,7 @@ header {
 .botao__MobileHeader_View {
     display: none;
     @media (max-width:style.$layout-breaking-small) {
-      z-index: 111;
+      z-index: 999;
       position: fixed;
       bottom: .9rem;
       right: .9rem;

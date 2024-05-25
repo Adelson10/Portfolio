@@ -39,9 +39,8 @@ a {
     text-decoration: none;
 }
 
-section {
-    padding: 3rem 0;
-    
+section {   
+    padding: 2rem 0;
     h1 {
         margin: .5rem 0;
         text-align: center;
@@ -54,7 +53,6 @@ section {
 }
 
 .Container__Box {
-
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -105,5 +103,9 @@ section {
         width: 40rem;
         margin: 0 auto;
      }
+        
+     section {  
+        padding-top: 90px;
+    }
 
 }

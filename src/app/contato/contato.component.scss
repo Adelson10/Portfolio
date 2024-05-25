@@ -1,0 +1,61 @@
+@use '../app.component.scss' as style;
+
+h2 {
+    font-weight: 400;
+}
+
+section{
+    text-align: center;
+        .FormasDeContato {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            article {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            
+                .Container__Box {
+                    text-align: center;
+                    h3,p {
+                        margin: .5rem 0;
+                        font-weight: 400;
+                    }
+                
+                    a {
+                        display: inline-block;
+                    }
+                }
+        
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+        
+                    div {
+                        position: relative;
+                        label {
+                            position: absolute;
+                            margin-left: 1rem;
+                            top: -7px;
+                            padding: 0 5px;
+                            background-color: style.$background;
+                            color: style.$secundaryColor;
+                        }
+                        input,textarea {
+                            padding: 1rem 2rem;
+                            border-radius: 1rem;
+                            border: 2px solid style.$secundaryColor;
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+    }
+
+    .Button {
+        @include style.ButtonPadrao();
+        width: auto;
+    }
+}
