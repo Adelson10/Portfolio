@@ -8,19 +8,6 @@ $colorBorder: #eee;
 $colorFundoContainers: white;
 $layout-breaking-small: 960px;
 
-@mixin ButtonPadrao() {
-    border: none;
-    color: $background;
-    padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    background-color: $primaryColor;
-    border-radius: 1rem;
-
-    text-decoration: none;
-    display: inline-block;
-    margin: 1rem 0;
-}
-
 h1,h2,h3,h4,h5 {
     color: $primaryColor;
 }
@@ -53,6 +40,7 @@ section {
 }
 
 .Container__Box {
+
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -96,6 +84,19 @@ section {
         border-radius: 1rem;
     }
 
+}
+
+.Button {
+    border: none;
+    color: $background;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: $primaryColor;
+    border-radius: 1rem;
+
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem 0;
 }
 
 @media (min-width: $layout-breaking-small) {

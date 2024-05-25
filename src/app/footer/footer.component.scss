@@ -1,0 +1,9 @@
+@use '../app.component.scss' as style;
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    p {
+        color: style.$secundaryColor;
+    }
+}

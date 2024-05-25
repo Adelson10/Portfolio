@@ -17,6 +17,7 @@ import { TimeLineComponent } from './qualificacoes/time-line/time-line.component
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { RepositorioComponent } from './portfolio/repositorio/repositorio.component';
 import { ContatoComponent } from './contato/contato.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ContatoComponent } from './contato/contato.component';
     TimeLineComponent,
     PortfolioComponent,
     RepositorioComponent,
-    ContatoComponent
+    ContatoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

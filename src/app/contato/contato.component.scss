@@ -23,7 +23,9 @@ section{
                     }
                 
                     a {
-                        display: inline-block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
         
@@ -54,8 +56,4 @@ section{
             }
     }
 
-    .Button {
-        @include style.ButtonPadrao();
-        width: auto;
-    }
 }
