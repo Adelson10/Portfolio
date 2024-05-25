@@ -130,13 +130,14 @@
                 align-items: center;
                 gap: .5rem;
                 margin: 1rem 0;
+
                 h3 {
                     color: style.$primaryColor;
                     font-weight: 400;
                 }
 
                 i {
-                    animation: scroll 1s ease-in infinite;
+                    animation: scroll 2s ease-in infinite;
                 }
 
                 @keyframes scroll {
