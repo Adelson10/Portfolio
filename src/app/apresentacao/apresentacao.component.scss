@@ -29,6 +29,10 @@
 
     .Apresentacao__Container_Texto {
         order: 3;
+        
+        .container__Mouse {
+            display: none;
+        }
 
         h1 {
             font-size: style.$FontSizeTitulo;
