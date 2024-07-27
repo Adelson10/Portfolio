@@ -11,9 +11,9 @@ export class PortfolioComponent {
 
     dados: Portfolio[] = [
       {
-        img: 'https://rockcontent.com/br/wp-content/uploads/sites/2/2020/06/site.jpg.webp',
-        title: 'teste',
-        src: 'teste',
+        img: '../../assets/image/portifolio/city.png',
+        title: 'City',
+        src: 'http://city.adelsonbarros.com/',
         type: 'Front-End'
       },
       {

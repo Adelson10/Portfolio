@@ -7,11 +7,32 @@ article {
     margin: 2rem 0
 }
 
+.Img__Size {
+    display: flex;
+
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.Img__Size img {
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.Img__Size:hover img {
+    transform: scale(1.5);
+}
 
 @media (min-width: style.$layout-breaking-small) {
     article {
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;
+    }
+    .Img__Size {    
+        max-height: 300px;
     }
 }

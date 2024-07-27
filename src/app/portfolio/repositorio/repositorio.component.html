@@ -1,6 +1,8 @@
 <article>
     <div class="Container__Box Box__Img" *ngFor="let dado of dados">
-        <img [src]="dado.img"/>
+        <div class="Img__Size">
+            <img [src]="dado.img" />
+        </div>
         <h3>{{dado.title}}</h3>
         <a href={{dado.src}} target="_blank">Demonstração</a>
     </div>
